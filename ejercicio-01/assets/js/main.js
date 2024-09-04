@@ -10,6 +10,13 @@ const countVotes = (votes) => {
     return voteCount;
 };
 
+const showResults = (results) => {
+    resultString = "Resultados de la votación: ";
+    for (const candidate in results) {
+        resultString += `${candidate}: ${results[candidate]} votos\n`;
+    }
+    alert(resultString);
+};
 
 const main = () => {
     let votes = [
@@ -17,9 +24,9 @@ const main = () => {
         { candidate: 'Bob' },
         { candidate: 'Alice' },
         { candidate: 'Alice' },
-        { candidate: 'Bob' }
+        { candidate: 'Bob' },
     ];
-    const results = countVotes(votes);
+    results = countVotes(votes);
     showResults(results);
 }
 
