@@ -1,9 +1,9 @@
-const searchNumber = (/*recibe*/) => {
-    //Code
+const searchNumber = () => {
+    
 }
 
 const requestNumber = () => {
-    //Code
+    
 }
 
 const main = () => {

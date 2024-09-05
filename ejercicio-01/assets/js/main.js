@@ -11,7 +11,7 @@ const countVotes = (votes) => {
 };
 
 const showResults = (results) => {
-    resultString = "Resultados de la votación: ";
+    resultString = "Resultados de la votación: \n";
     for (const candidate in results) {
         resultString += `${candidate}: ${results[candidate]} votos\n`;
     }
