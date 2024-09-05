@@ -7,13 +7,14 @@ const searchNumber = (a) => {
 };
 
 const requestNumber = () => {
-    let a=parseFloat(prompt("Introduce un numero entero no negativo para calcular su factorial;"));
+    let a=parseFloat(prompt("Introduce un numero entero no negativo para calcular su factorial:"));
     if (isNaN(a)||a<0) {
         alert("Ingrese un numero valido");
         return requestNumber();
     }
     return a;
 }
+
 
 const main = () => {
     let a=requestNumber();
